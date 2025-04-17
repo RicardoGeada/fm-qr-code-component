@@ -57,6 +57,7 @@ body {
   min-height: 100vh;
 }
 
+/* qr code component */
 .qr-code-component {
   background-color: var(--color-white);
   width: 320px;
