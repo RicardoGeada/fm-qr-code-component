@@ -1,0 +1,89 @@
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/outfit-v11-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/outfit-v11-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --color-slate-900: #1f314f;
+  --color-slate-500: #68778d;
+  --color-slate-300: #d5e1ef;
+  --color-white: #ffffff;
+  --space-500: 40px;
+  --space-300: 24px;
+  --space-200: 16px;
+}
+
+/* text presets */
+.text-preset-1 {
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  color: var(--color-slate-900);
+}
+
+.text-preset-2 {
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: var(--color-slate-500);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--color-slate-300);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  min-height: 100vh;
+}
+
+.qr-code-component {
+  background-color: var(--color-white);
+  width: 320px;
+  padding: 16px 16px 40px 16px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-300);
+}
+
+.qr-code-component img {
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+}
+
+.qr-code-component .text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-200);
+}
+
+/* attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
